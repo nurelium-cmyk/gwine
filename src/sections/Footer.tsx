@@ -142,7 +142,7 @@ export function Footer() {
                     <span>{footerConfig.newsletterSuccessText}</span>
                   </div>
                 ) : (
-                  <form onSubmit={handleNewsletter} className="flex gap-2">
+                  <form onSubmit={handleNewsletter} className="flex flex-col sm:flex-row gap-2">
                     <label htmlFor="newsletter-email" className="sr-only">{footerConfig.newsletterLabel}</label>
                     <input
                       id="newsletter-email"
@@ -156,7 +156,7 @@ export function Footer() {
                     />
                     <button
                       type="submit"
-                      className="px-4 py-2 bg-gold-500 text-white text-sm rounded-sm hover:bg-gold-600 transition-colors"
+                      className="px-4 py-2 bg-gold-500 text-white text-sm rounded-sm hover:bg-gold-600 transition-colors whitespace-nowrap sm:whitespace-normal"
                     >
                       {footerConfig.newsletterButtonText}
                     </button>
