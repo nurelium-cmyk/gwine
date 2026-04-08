@@ -179,10 +179,6 @@ export function Footer() {
               <span>&copy; {new Date().getFullYear()} {footerConfig.copyrightText}</span>
             )}
             {footerConfig.legalLinks.map((link, index) => (
-              <span key={index}>
-                <span className="hidden md:inline">|</span>
-                <button className="hover:text-gold-400 transition-colors ml-2 md:ml-0">{link}</button>
-              </span>
             ))}
             {footerConfig.icpText && (
               <>
